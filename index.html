@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="Author" content="MOHD SAKIB SALMANI " />
+	<title> My Portfolio </title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<header>
+		<nav class="nav-bar">
+			<div class="logo"><img src="image/code.png"></div>
+			<div class="menu">
+				<ul>
+					<li><a href="#home">Home </a></li>
+					<li><a href="#skills">Skill</a></li>
+					<li><a href="#projects">projects</a></li>
+					<li><a href="#">Blogs</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="first-section" id="home">
+			<div class="left-section">
+				Hi, My name is <span class="purple">MOHD SAKIB</span>
+				<p> and i am a passionate</p>
+				<span id="element"> </span>
+			</div>
+			<div class="right-section">
+				<img src="image/img.jpg">
+			</div>
+		</section>
+		<hr>
+		<!--- second section--->
+		<section class="second-section" id="skills">
+			<h2> My Skills </h2>
+			<div class="skills-div">
+				<div class="html-div">
+					<img src="image/html-png.jpeg">
+					<small>HTML &nbsp;100%</small>
+					<progress value="100" max="100">80%</progress>
+					<!-- <small>HTML &nbsp;100%</small> -->
+
+				</div>
+				<div class="css-div">
+					<img src="image/css-png.jpeg">
+					<small>CSS &nbsp;100%</small>
+					<progress value="100" max="100">80%</progress>
+
+				</div>
+				<div class="javascript-div">
+					<img src="image/javascript.png">
+					<small>Javascript&nbsp;80%</small>
+					<progress value="80" max="100">80%</progress>
+				</div>
+				<div class="bootstrap-div">
+					<img src="image/bootstrap.png">
+					<small>Bootsrap&nbsp;75%</small>
+					<progress value="75" max="100">80%</progress>
+				</div>
+				<div class="bootstrap-div">
+					<img src="image/jquery.png">
+					<small>jQuery &nbsp;50%</small>
+					<progress value="50" max="100"></progress>
+				</div>
+				<div class="react-div">
+					<img src="image/react.png">
+					<small>React &nbsp;40%</small>
+					<progress value="40" max="100"></progress>
+				</div>
+				<div class="php-div">
+					<img src="image/php.png">
+					<small>PHP &nbsp;70%</small>
+					<progress value="70" max="100"></progress>
+				</div>
+				<div class="mysql-div">
+					<img src="image/mysql.png">
+					<small> MySql &nbsp;80%</small>
+					<progress value="80" max="100"></progress>
+
+				</div>
+
+			</div>
+		</section>
+		<hr>
+
+		<!-- This is project section -->
+
+		<section class="project-section" id="projects">
+			<small class="gray">5+ project</small>
+			<h1>Projects </h1>
+			<div class="projects">
+				<div class="web-design">
+					<img src="image/web1.png" class="web-image">
+					<a href="#">Visit Live</a>
+
+				</div>
+				<div class="Ecomerce-web">
+					<img src="image/web2.png" class="web-image">
+					<a href="#">Visit Live</a>
+				</div>
+				<div class="music-web">
+					<img src="image/web3.png" class="web-image">
+					<a href="#">Visit Live</a>
+				</div>
+				<div class="portfolio">
+					<img src="image/web4.png" class="web-image">
+					<a href="#">Visit Live</a>
+				</div>
+				<div class="socialmedia">
+					<img src="image/web5.png" class="web-image">
+					<a href="#">Visit Live</a>
+				</div>
+				<div class="blogs">
+					<img src="image/web6.png" class="web-image">
+					<a href="#">Visit Live</a>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+		<!-- contact section for me -->
+		<section class="contect-section" id="contact">
+			<h2>Contect Me </h2>
+			<form class="form" action="connection.php" method="post">
+				<input type="text" name="name" placeholder="Enter Your Name" required>
+				<input type="email" name="email" placeholder="Enter Your Email" required>
+				<input type="number" name="number" placeholder="Contact Details" required>
+				<input type="text" name="subject" placeholder="write here..." required>
+
+				<button class="buttons"> get in touch </button>
+
+			</form>
+		</section>
+		<hr>
+		<!-- This is footer section -->
+		<section class="footer">
+			<div class="footer-box">Sakib's portfolio </div>
+			<div class="footer-box">
+				<ul>
+					<li>Home</li>
+					<li>Work</li>
+					<li>Skills</li>
+					<li>Contatc</li>
+				</ul>
+
+			</div>
+			<div class="footer-box icons">
+				<ul>
+					<li><i class="fa fa-facebook" style="font-size:40px;color:blue;"></i></li>
+					<li><i class="fa fa-instagram" style="font-size:40px;color:red;"></i></li>
+					 
+				</ul>
+			</div>
+			<div class="footer-box icons">
+				<ul>
+				   <li>
+				    <i class="fa fa-linkedin" style="font-size:40px;color:skyblue;"></i>
+				</li>
+					<li> <i class="fa fa-github" style="font-size:40px;color:black;"></i></li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<!--- script for animation --->
+	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+	<!-- Setup and start animation! -->
+	<script>
+		var typed = new Typed('#element', {
+			strings: [' Web Designer', 'Wordpress Developer', 'Web Developer.'],
+			typeSpeed: 50,
+		});
+	</script>
+
+</body>
+
+</html>
